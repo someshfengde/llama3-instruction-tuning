@@ -38,6 +38,23 @@ tune run quantize --config ./quantization_config.yaml
 
 ```
 
+### Finetuned model 
+```
+./llama-3-instruction-tuned-math
+├── LICENSE
+├── README.md
+├── USE_POLICY.md
+├── adapter_0.pt ## lora finetuned adapter 
+├── config.json
+├── generation_config.json
+├── meta_model_0-4w.pt ## quantized model 
+├── meta_model_0.pt ## original metallama model. 8b
+├── model.safetensors.index.json
+├── special_tokens_map.json
+├── tokenizer.json
+├── tokenizer.model
+└── tokenizer_config.json
+```
 ### To generate inference from model.
 ```
 tune run generate --config ./generation_config.yaml \
