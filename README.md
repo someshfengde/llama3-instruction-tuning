@@ -1,5 +1,13 @@
 ## Instruction Tuning LLAMA3 
+<a target="_blank" href="https://lightning.ai/someshfengde/studios/llama-3-instruction-tuning">
+  <img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/>
+</a>
+
 This repo uses the `torchtune` for instruction tuning the llama3 pretrained model on mathematical tasks using LORA. 
+
+
+studio link: 
+https://lightning.ai/someshfengde/studios/llama-3-instruction-tuning
 
 ### Wandb report link
 https://wandb.ai/som/torchtune_llama3?nw=nwusersom
