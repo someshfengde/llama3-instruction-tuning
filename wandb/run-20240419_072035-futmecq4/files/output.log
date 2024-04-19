@@ -1,0 +1,50 @@
+INFO:torchtune.utils.logging:Logging /teamspace/studios/this_studio/llama3-8b-hf/original/torchtune_config.yaml to W&B under Files
+INFO:torchtune.utils.logging:Model is initialized with precision torch.bfloat16.
+INFO:torchtune.utils.logging:Memory Stats after model init:
+{'peak_memory_active': 16.572998144, 'peak_memory_alloc': 16.572998144, 'peak_memory_reserved': 16.642998272}
+INFO:torchtune.utils.logging:Tokenizer is initialized from file.
+INFO:torchtune.utils.logging:Optimizer and loss are initialized.
+INFO:torchtune.utils.logging:Loss is initialized.
+INFO:torchtune.utils.logging:Dataset and Sampler are initialized.
+INFO:torchtune.utils.logging:Learning rate scheduler is initialized.
+  0%|                                                                                                                                                                                                                    | 0/10646 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/.venv/bin/tune", line 8, in <module>
+    sys.exit(main())
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/tune.py", line 49, in main
+    parser.run(args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/tune.py", line 43, in run
+    args.func(args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/run.py", line 179, in _run_cmd
+    self._run_single_device(args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/run.py", line 93, in _run_single_device
+    runpy.run_path(str(args.recipe), run_name="__main__")
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 510, in <module>
+    sys.exit(recipe_main())
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/config/_parse.py", line 50, in wrapper
+    sys.exit(recipe_main(conf))
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 505, in recipe_main
+    recipe.train()
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 432, in train
+    for idx, batch in enumerate(pbar := tqdm(self._dataloader)):
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/datasets/_instruct.py", line 80, in __getitem__
+    return self._prepare_sample(sample)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/datasets/_instruct.py", line 93, in _prepare_sample
+    Message(role="assistant", content=transformed_sample[key_output]),
+KeyError: 'output'

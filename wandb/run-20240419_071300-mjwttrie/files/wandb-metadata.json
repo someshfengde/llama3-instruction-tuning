@@ -1,0 +1,85 @@
+{
+    "os": "Linux-5.15.0-1057-aws-x86_64-with-glibc2.31",
+    "python": "3.10.10",
+    "heartbeatAt": "2024-04-19T07:13:01.243251",
+    "startedAt": "2024-04-19T07:13:00.669891",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config",
+        "./lora_finetune_single_device.yaml"
+    ],
+    "state": "running",
+    "program": "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py",
+    "codePathLocal": ".venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py",
+    "codePath": ".venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py",
+    "host": "ip-10-192-11-171",
+    "username": "zeus",
+    "executable": "/teamspace/studios/this_studio/.venv/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2649.997875,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2499.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2499.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2499.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3100.057,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2499.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3099.95,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2499.996,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2499.996,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 387.4823341369629,
+            "used": 65.86388778686523
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 30.887252807617188
+    }
+}

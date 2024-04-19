@@ -1,0 +1,125 @@
+{
+    "os": "Linux-5.15.0-1057-aws-x86_64-with-glibc2.31",
+    "python": "3.10.10",
+    "heartbeatAt": "2024-04-19T07:16:12.976579",
+    "startedAt": "2024-04-19T07:16:12.613987",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config",
+        "./lora_finetune_single_device.yaml"
+    ],
+    "state": "running",
+    "program": "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py",
+    "codePathLocal": ".venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py",
+    "codePath": ".venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py",
+    "host": "ip-10-192-11-118",
+    "username": "zeus",
+    "executable": "/teamspace/studios/this_studio/.venv/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2698.1511875,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3420.419,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2650.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 387.4823341369629,
+            "used": 65.85858917236328
+        }
+    },
+    "gpu": "NVIDIA L4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA L4",
+            "memory_total": 24152899584
+        }
+    ],
+    "memory": {
+        "total": 60.46147918701172
+    }
+}

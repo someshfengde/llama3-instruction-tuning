@@ -1,0 +1,29 @@
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Configure stats pid to 4546
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Loading settings from /teamspace/studios/this_studio/.config/wandb/settings
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Loading settings from /teamspace/studios/this_studio/wandb/settings
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': '.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py', 'program_abspath': '/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py', 'program': '/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py'}
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_init.py:_log_setup():521] Logging user logs to /teamspace/studios/this_studio/wandb/run-20240419_071300-mjwttrie/logs/debug.log
+2024-04-19 07:13:00,671 INFO    MainThread:4546 [wandb_init.py:_log_setup():522] Logging internal logs to /teamspace/studios/this_studio/wandb/run-20240419_071300-mjwttrie/logs/debug-internal.log
+2024-04-19 07:13:00,672 INFO    MainThread:4546 [wandb_init.py:init():561] calling init triggers
+2024-04-19 07:13:00,672 INFO    MainThread:4546 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-19 07:13:00,672 INFO    MainThread:4546 [wandb_init.py:init():611] starting backend
+2024-04-19 07:13:00,672 INFO    MainThread:4546 [wandb_init.py:init():615] setting up manager
+2024-04-19 07:13:00,673 INFO    MainThread:4546 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-19 07:13:00,677 INFO    MainThread:4546 [wandb_init.py:init():623] backend started and connected
+2024-04-19 07:13:00,680 INFO    MainThread:4546 [wandb_init.py:init():715] updated telemetry
+2024-04-19 07:13:00,681 INFO    MainThread:4546 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-19 07:13:01,124 INFO    MainThread:4546 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-19 07:13:01,155 INFO    MainThread:4546 [wandb_run.py:_on_init():2366] got version response 
+2024-04-19 07:13:01,155 INFO    MainThread:4546 [wandb_init.py:init():799] starting run threads in backend
+2024-04-19 07:13:01,323 INFO    MainThread:4546 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-19 07:13:01,324 INFO    MainThread:4546 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-19 07:13:01,324 INFO    MainThread:4546 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-19 07:13:01,324 INFO    MainThread:4546 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-19 07:13:01,325 INFO    MainThread:4546 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-19 07:13:01,327 INFO    MainThread:4546 [wandb_run.py:_config_callback():1347] config_cb None None {'model': {'_component_': 'torchtune.models.llama3.lora_llama3_8b', 'lora_attn_modules': ['q_proj', 'v_proj'], 'apply_lora_to_mlp': False, 'apply_lora_to_output': False, 'lora_rank': 8, 'lora_alpha': 16}, 'tokenizer': {'_component_': 'torchtune.models.llama3.llama3_tokenizer', 'path': '/teamspace/studios/this_studio/llama3-8b-hf/original/tokenizer.model'}, 'checkpointer': {'_component_': 'torchtune.utils.FullModelMetaCheckpointer', 'checkpoint_dir': '/teamspace/studios/this_studio/llama3-8b-hf/original/', 'checkpoint_files': ['consolidated.00.pth'], 'recipe_checkpoint': None, 'output_dir': '/teamspace/studios/this_studio/llama3-8b-hf/', 'model_type': 'LLAMA3'}, 'resume_from_checkpoint': False, 'dataset': {'_component_': 'torchtune.datasets.instruct_dataset', 'source': 'Someshfengde/AIMO_dataset', 'template': 'AlpacaInstructTemplate', 'train_on_input': True, 'max_seq_len': 512}, 'seed': None, 'shuffle': True, 'batch_size': 2, 'optimizer': {'_component_': 'torch.optim.AdamW', 'weight_decay': 0.01, 'lr': 0.0003}, 'lr_scheduler': {'_component_': 'torchtune.modules.get_cosine_schedule_with_warmup', 'num_warmup_steps': 100}, 'loss': {'_component_': 'torch.nn.CrossEntropyLoss'}, 'epochs': 1, 'max_steps_per_epoch': None, 'gradient_accumulation_steps': 64, 'compile': False, 'output_dir': 'lora_finetune_output', 'metric_logger': {'_component_': 'torchtune.utils.metric_logging.WandBLogger', 'project': 'torchtune_llama3'}, 'log_every_n_steps': None, 'device': 'cuda', 'dtype': 'fp32', 'enable_activation_checkpointing': True, 'profiler': {'_component_': 'torchtune.utils.profiler', 'enabled': False}}
+2024-04-19 07:13:05,634 WARNING MsgRouterThr:4546 [router.py:message_loop():77] message_loop has been closed

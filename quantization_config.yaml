@@ -1,0 +1,28 @@
+# Config for QuantizationRecipe in quantize.py
+#
+# To launch, run the following command from root torchtune directory:
+#    tune run quantize --config quantization
+
+#
+# Model arguments
+model:
+  _component_: torchtune.models.llama3.llama3_8b
+
+
+checkpointer:
+  _component_: torchtune.utils.FullModelMetaCheckpointer
+  checkpoint_dir: /teamspace/studios/this_studio/llama3-8b-hf/
+  checkpoint_files: [
+    /teamspace/studios/this_studio/llama-3-instruction-tuned-math/meta_model_0.pt,
+    ]
+  recipe_checkpoint: null
+  output_dir: llama3_hf_quantized
+  model_type: LLAMA3
+
+device: cuda
+dtype: bf16
+seed: 1234
+
+quantizer:
+  _component_: torchtune.utils.quantization.Int4WeightOnlyQuantizer
+  groupsize: 256

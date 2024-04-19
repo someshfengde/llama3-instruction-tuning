@@ -1,0 +1,87 @@
+INFO:torchtune.utils.logging:Logging /teamspace/studios/this_studio/llama3-8b-hf/original/torchtune_config.yaml to W&B under Files
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/.venv/bin/tune", line 8, in <module>
+    sys.exit(main())
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/tune.py", line 49, in main
+    parser.run(args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/tune.py", line 43, in run
+    args.func(args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/run.py", line 179, in _run_cmd
+    self._run_single_device(args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/_cli/run.py", line 93, in _run_single_device
+    runpy.run_path(str(args.recipe), run_name="__main__")
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 510, in <module>
+    sys.exit(recipe_main())
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/config/_parse.py", line 50, in wrapper
+    sys.exit(recipe_main(conf))
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 504, in recipe_main
+    recipe.setup(cfg=cfg)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 184, in setup
+    self._model = self._setup_model(
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py", line 255, in _setup_model
+    model = config.instantiate(cfg_model)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/config/_instantiate.py", line 106, in instantiate
+    return _instantiate_node(config, *args)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/config/_instantiate.py", line 31, in _instantiate_node
+    return _create_component(_component_, args, kwargs)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/config/_instantiate.py", line 20, in _create_component
+    return _component_(*args, **kwargs)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/models/llama3/_model_builders.py", line 83, in lora_llama3_8b
+    return lora_llama3(
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/models/llama3/_component_builders.py", line 237, in lora_llama3
+    model = TransformerDecoder(
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/modules/transformer.py", line 137, in __init__
+    self.layers = _get_clones(layer, num_layers)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/modules/transformer.py", line 93, in _get_clones
+    return nn.ModuleList([copy.deepcopy(module) for i in range(n)])
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torchtune/modules/transformer.py", line 93, in <listcomp>
+    return nn.ModuleList([copy.deepcopy(module) for i in range(n)])
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 297, in _reconstruct
+    value = deepcopy(value, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 297, in _reconstruct
+    value = deepcopy(value, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 297, in _reconstruct
+    value = deepcopy(value, memo)
+  File "/system/conda/miniconda3/envs/cloudspace/lib/python3.10/copy.py", line 153, in deepcopy
+    y = copier(memo)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torch/nn/parameter.py", line 59, in __deepcopy__
+    result = type(self)(self.data.clone(memory_format=torch.preserve_format), self.requires_grad)
+  File "/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/torch/utils/_device.py", line 77, in __torch_function__
+    return func(*args, **kwargs)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 14.75 GiB of which 27.06 MiB is free. Process 15314 has 14.72 GiB memory in use. Of the allocated memory 14.60 GiB is allocated by PyTorch, and 3.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

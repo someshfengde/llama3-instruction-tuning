@@ -1,0 +1,192 @@
+2024-04-19 07:19:51,166 INFO    StreamThr :6066 [internal.py:wandb_internal():86] W&B internal server running at pid: 6066, started at: 2024-04-19 07:19:51.166019
+2024-04-19 07:19:51,167 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: status
+2024-04-19 07:19:51,168 INFO    WriterThread:6066 [datastore.py:open_for_write():87] open: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/run-5tevv10f.wandb
+2024-04-19 07:19:51,169 DEBUG   SenderThread:6066 [sender.py:send():379] send: header
+2024-04-19 07:19:51,169 DEBUG   SenderThread:6066 [sender.py:send():379] send: run
+2024-04-19 07:19:51,338 INFO    SenderThread:6066 [dir_watcher.py:__init__():211] watching files in: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files
+2024-04-19 07:19:51,338 INFO    SenderThread:6066 [sender.py:_start_run_threads():1124] run started: 5tevv10f with start time 1713511191.165952
+2024-04-19 07:19:51,436 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: check_version
+2024-04-19 07:19:51,437 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: check_version
+2024-04-19 07:19:51,501 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: run_start
+2024-04-19 07:19:51,506 DEBUG   HandlerThread:6066 [system_info.py:__init__():26] System info init
+2024-04-19 07:19:51,506 DEBUG   HandlerThread:6066 [system_info.py:__init__():41] System info init done
+2024-04-19 07:19:51,506 INFO    HandlerThread:6066 [system_monitor.py:start():194] Starting system monitor
+2024-04-19 07:19:51,506 INFO    SystemMonitor:6066 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-19 07:19:51,506 INFO    HandlerThread:6066 [system_monitor.py:probe():214] Collecting system info
+2024-04-19 07:19:51,506 INFO    SystemMonitor:6066 [interfaces.py:start():190] Started cpu monitoring
+2024-04-19 07:19:51,507 INFO    SystemMonitor:6066 [interfaces.py:start():190] Started disk monitoring
+2024-04-19 07:19:51,508 INFO    SystemMonitor:6066 [interfaces.py:start():190] Started gpu monitoring
+2024-04-19 07:19:51,508 INFO    SystemMonitor:6066 [interfaces.py:start():190] Started memory monitoring
+2024-04-19 07:19:51,508 INFO    SystemMonitor:6066 [interfaces.py:start():190] Started network monitoring
+2024-04-19 07:19:51,517 DEBUG   HandlerThread:6066 [system_info.py:probe():150] Probing system
+2024-04-19 07:19:51,518 DEBUG   HandlerThread:6066 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-19 07:19:51,518 DEBUG   HandlerThread:6066 [system_info.py:probe():198] Probing system done
+2024-04-19 07:19:51,518 DEBUG   HandlerThread:6066 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-1057-aws-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2024-04-19T07:19:51.517270', 'startedAt': '2024-04-19T07:19:51.161285', 'docker': None, 'cuda': None, 'args': ('--config', './lora_finetune_single_device.yaml'), 'state': 'running', 'program': '/teamspace/studios/this_studio/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py', 'codePathLocal': '.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py', 'codePath': '.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py', 'host': 'ip-10-192-11-118', 'username': 'zeus', 'executable': '/teamspace/studios/this_studio/.venv/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2722.2589375000002, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 3260.724, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}, {'current': 2650.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 387.4823341369629, 'used': 65.89816284179688}}, 'gpu': 'NVIDIA L4', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA L4', 'memory_total': 24152899584}], 'memory': {'total': 60.46147918701172}}
+2024-04-19 07:19:51,518 INFO    HandlerThread:6066 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-19 07:19:51,518 INFO    HandlerThread:6066 [system_monitor.py:probe():227] Publishing system info
+2024-04-19 07:19:51,518 DEBUG   HandlerThread:6066 [system_info.py:_save_code():44] Saving code
+2024-04-19 07:19:51,518 DEBUG   HandlerThread:6066 [system_info.py:_save_code():65] Saving code done
+2024-04-19 07:19:51,519 INFO    HandlerThread:6066 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-19 07:19:51,520 DEBUG   SenderThread:6066 [sender.py:send():379] send: files
+2024-04-19 07:19:51,520 INFO    SenderThread:6066 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-19 07:19:51,521 INFO    SenderThread:6066 [sender.py:_save_file():1390] saving file code/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py with policy now
+2024-04-19 07:19:51,560 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-19 07:19:51,561 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: python_packages
+2024-04-19 07:19:51,601 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-19 07:19:51,602 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-19 07:19:51,603 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: stop_status
+2024-04-19 07:19:51,739 DEBUG   SenderThread:6066 [sender.py:send():379] send: telemetry
+2024-04-19 07:19:51,739 DEBUG   SenderThread:6066 [sender.py:send():379] send: telemetry
+2024-04-19 07:19:51,739 DEBUG   SenderThread:6066 [sender.py:send():379] send: metric
+2024-04-19 07:19:51,740 DEBUG   SenderThread:6066 [sender.py:send():379] send: telemetry
+2024-04-19 07:19:51,740 DEBUG   SenderThread:6066 [sender.py:send():379] send: metric
+2024-04-19 07:19:51,740 WARNING SenderThread:6066 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-04-19 07:19:51,740 DEBUG   SenderThread:6066 [sender.py:send():379] send: config
+2024-04-19 07:19:51,740 DEBUG   SenderThread:6066 [sender.py:send():379] send: telemetry
+2024-04-19 07:19:51,741 DEBUG   SenderThread:6066 [sender.py:send():379] send: files
+2024-04-19 07:19:51,741 INFO    SenderThread:6066 [sender.py:_save_file():1390] saving file torchtune_config.yaml with policy live
+2024-04-19 07:19:51,747 INFO    wandb-upload_0:6066 [upload_job.py:push():131] Uploaded file /tmp/tmpszhwonl_wandb/soib5ucx-wandb-metadata.json
+2024-04-19 07:19:51,787 INFO    wandb-upload_1:6066 [upload_job.py:push():131] Uploaded file /tmp/tmpszhwonl_wandb/t1ysyagm-code/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py
+2024-04-19 07:19:51,922 INFO    wandb-upload_2:6066 [upload_job.py:push():131] Uploaded file /tmp/tmpszhwonl_wandb/x7ait9vs-torchtune_config.yaml
+2024-04-19 07:19:52,339 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_created():271] file/dir created: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/wandb-metadata.json
+2024-04-19 07:19:52,340 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_created():271] file/dir created: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/requirements.txt
+2024-04-19 07:19:52,340 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_created():271] file/dir created: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/output.log
+2024-04-19 07:19:52,340 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_created():271] file/dir created: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/torchtune_config.yaml
+2024-04-19 07:19:52,340 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_created():271] file/dir created: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/code
+2024-04-19 07:19:54,339 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_modified():288] file/dir modified: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/output.log
+2024-04-19 07:19:55,310 DEBUG   SenderThread:6066 [sender.py:send():379] send: exit
+2024-04-19 07:19:55,310 INFO    SenderThread:6066 [sender.py:send_exit():586] handling exit code: 1
+2024-04-19 07:19:55,310 INFO    SenderThread:6066 [sender.py:send_exit():588] handling runtime: 3
+2024-04-19 07:19:55,311 INFO    SenderThread:6066 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-19 07:19:55,311 INFO    SenderThread:6066 [sender.py:send_exit():594] send defer
+2024-04-19 07:19:55,311 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,311 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-19 07:19:55,311 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,311 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-19 07:19:55,311 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 1
+2024-04-19 07:19:55,312 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,312 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-19 07:19:55,312 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,312 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-19 07:19:55,312 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 2
+2024-04-19 07:19:55,312 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,312 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-19 07:19:55,312 INFO    HandlerThread:6066 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-19 07:19:55,312 DEBUG   SystemMonitor:6066 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-19 07:19:55,312 INFO    HandlerThread:6066 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-19 07:19:55,312 DEBUG   SystemMonitor:6066 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-19 07:19:55,313 INFO    HandlerThread:6066 [interfaces.py:finish():202] Joined disk monitor
+2024-04-19 07:19:55,313 DEBUG   SystemMonitor:6066 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-19 07:19:55,318 INFO    HandlerThread:6066 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-19 07:19:55,318 INFO    HandlerThread:6066 [interfaces.py:finish():202] Joined memory monitor
+2024-04-19 07:19:55,318 INFO    HandlerThread:6066 [interfaces.py:finish():202] Joined network monitor
+2024-04-19 07:19:55,318 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,318 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-19 07:19:55,318 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 3
+2024-04-19 07:19:55,318 DEBUG   SenderThread:6066 [sender.py:send():379] send: stats
+2024-04-19 07:19:55,318 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,318 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-19 07:19:55,319 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,319 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-19 07:19:55,319 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 4
+2024-04-19 07:19:55,319 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,319 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-19 07:19:55,319 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,319 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-19 07:19:55,319 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 5
+2024-04-19 07:19:55,319 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,319 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-19 07:19:55,319 DEBUG   SenderThread:6066 [sender.py:send():379] send: summary
+2024-04-19 07:19:55,319 INFO    SenderThread:6066 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-19 07:19:55,320 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,320 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-19 07:19:55,320 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 6
+2024-04-19 07:19:55,320 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,320 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-19 07:19:55,320 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,320 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-19 07:19:55,322 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: status_report
+2024-04-19 07:19:55,340 INFO    Thread-12 :6066 [dir_watcher.py:_on_file_created():271] file/dir created: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/wandb-summary.json
+2024-04-19 07:19:55,414 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 7
+2024-04-19 07:19:55,415 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,415 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-19 07:19:55,415 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,415 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-19 07:19:55,768 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 8
+2024-04-19 07:19:55,768 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,768 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-19 07:19:55,768 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,768 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-19 07:19:55,768 INFO    SenderThread:6066 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-19 07:19:55,769 INFO    SenderThread:6066 [job_builder.py:_get_source_type():466] no source found
+2024-04-19 07:19:55,769 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 9
+2024-04-19 07:19:55,769 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:55,769 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-19 07:19:55,769 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:55,769 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-19 07:19:55,769 INFO    SenderThread:6066 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-19 07:19:56,310 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-19 07:19:56,341 INFO    SenderThread:6066 [dir_watcher.py:_on_file_modified():288] file/dir modified: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/output.log
+2024-04-19 07:19:56,341 INFO    SenderThread:6066 [dir_watcher.py:_on_file_modified():288] file/dir modified: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/config.yaml
+2024-04-19 07:19:56,341 INFO    SenderThread:6066 [dir_watcher.py:finish():388] scan: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files
+2024-04-19 07:19:56,341 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/requirements.txt requirements.txt
+2024-04-19 07:19:56,341 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/wandb-summary.json wandb-summary.json
+2024-04-19 07:19:56,343 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/config.yaml config.yaml
+2024-04-19 07:19:56,343 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/torchtune_config.yaml torchtune_config.yaml
+2024-04-19 07:19:56,343 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/wandb-metadata.json wandb-metadata.json
+2024-04-19 07:19:56,343 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/output.log output.log
+2024-04-19 07:19:56,347 INFO    SenderThread:6066 [dir_watcher.py:finish():402] scan save: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/code/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py code/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py
+2024-04-19 07:19:56,348 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 10
+2024-04-19 07:19:56,348 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: poll_exit
+2024-04-19 07:19:56,348 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:56,348 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-19 07:19:56,348 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:56,348 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-19 07:19:56,348 INFO    SenderThread:6066 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-19 07:19:56,534 INFO    wandb-upload_2:6066 [upload_job.py:push():131] Uploaded file /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/wandb-summary.json
+2024-04-19 07:19:56,535 INFO    wandb-upload_0:6066 [upload_job.py:push():131] Uploaded file /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/requirements.txt
+2024-04-19 07:19:56,545 INFO    wandb-upload_1:6066 [upload_job.py:push():131] Uploaded file /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/config.yaml
+2024-04-19 07:19:56,556 INFO    wandb-upload_3:6066 [upload_job.py:push():131] Uploaded file /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/files/output.log
+2024-04-19 07:19:56,756 INFO    Thread-11 (_thread_body):6066 [sender.py:transition_state():614] send defer: 11
+2024-04-19 07:19:56,757 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:56,757 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-19 07:19:56,757 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:56,757 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-19 07:19:56,757 INFO    SenderThread:6066 [file_pusher.py:join():178] waiting for file pusher
+2024-04-19 07:19:56,758 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 12
+2024-04-19 07:19:56,758 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:56,758 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-19 07:19:56,758 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:56,758 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-19 07:19:56,758 INFO    SenderThread:6066 [file_stream.py:finish():614] file stream finish called
+2024-04-19 07:19:56,818 INFO    SenderThread:6066 [file_stream.py:finish():618] file stream finish is done
+2024-04-19 07:19:56,818 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 13
+2024-04-19 07:19:56,818 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:56,818 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-19 07:19:56,819 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:56,819 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-19 07:19:56,819 INFO    SenderThread:6066 [sender.py:transition_state():614] send defer: 14
+2024-04-19 07:19:56,819 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: defer
+2024-04-19 07:19:56,819 DEBUG   SenderThread:6066 [sender.py:send():379] send: final
+2024-04-19 07:19:56,819 DEBUG   SenderThread:6066 [sender.py:send():379] send: footer
+2024-04-19 07:19:56,819 INFO    HandlerThread:6066 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-19 07:19:56,820 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: defer
+2024-04-19 07:19:56,820 INFO    SenderThread:6066 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-19 07:19:56,820 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-19 07:19:56,820 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: poll_exit
+2024-04-19 07:19:56,821 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-19 07:19:56,821 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: server_info
+2024-04-19 07:19:56,821 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: poll_exit
+2024-04-19 07:19:56,822 DEBUG   SenderThread:6066 [sender.py:send_request():406] send_request: server_info
+2024-04-19 07:19:56,822 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-19 07:19:56,823 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-19 07:19:56,824 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-19 07:19:56,866 INFO    MainThread:6066 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-19 07:19:56,866 INFO    MainThread:6066 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-19 07:19:56,866 INFO    MainThread:6066 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-19 07:19:56,866 DEBUG   HandlerThread:6066 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-19 07:19:56,866 INFO    HandlerThread:6066 [handler.py:finish():866] shutting down handler
+2024-04-19 07:19:57,821 INFO    WriterThread:6066 [datastore.py:close():296] close: /teamspace/studios/this_studio/wandb/run-20240419_071951-5tevv10f/run-5tevv10f.wandb
+2024-04-19 07:19:57,866 INFO    SenderThread:6066 [sender.py:finish():1546] shutting down sender
+2024-04-19 07:19:57,866 INFO    SenderThread:6066 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-19 07:19:57,866 INFO    SenderThread:6066 [file_pusher.py:join():178] waiting for file pusher

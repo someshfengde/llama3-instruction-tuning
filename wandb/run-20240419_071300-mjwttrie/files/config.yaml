@@ -1,0 +1,136 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    code_path: code/.venv/lib/python3.10/site-packages/recipes/lora_finetune_single_device.py
+    python_version: 3.10.10
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1713510780.0
+    t:
+      1:
+      - 1
+      - 49
+      - 51
+      - 55
+      2:
+      - 1
+      - 49
+      - 51
+      - 55
+      3:
+      - 3
+      - 7
+      - 23
+      4: 3.10.10
+      5: 0.16.6
+      8:
+      - 5
+      9:
+        2: torchtune
+      13: linux-x86_64
+    m:
+    - 1: total_training_steps
+      6:
+      - 3
+model:
+  desc: null
+  value:
+    _component_: torchtune.models.llama3.lora_llama3_8b
+    lora_attn_modules:
+    - q_proj
+    - v_proj
+    apply_lora_to_mlp: false
+    apply_lora_to_output: false
+    lora_rank: 8
+    lora_alpha: 16
+tokenizer:
+  desc: null
+  value:
+    _component_: torchtune.models.llama3.llama3_tokenizer
+    path: /teamspace/studios/this_studio/llama3-8b-hf/original/tokenizer.model
+checkpointer:
+  desc: null
+  value:
+    _component_: torchtune.utils.FullModelMetaCheckpointer
+    checkpoint_dir: /teamspace/studios/this_studio/llama3-8b-hf/original/
+    checkpoint_files:
+    - consolidated.00.pth
+    recipe_checkpoint: null
+    output_dir: /teamspace/studios/this_studio/llama3-8b-hf/
+    model_type: LLAMA3
+resume_from_checkpoint:
+  desc: null
+  value: false
+dataset:
+  desc: null
+  value:
+    _component_: torchtune.datasets.instruct_dataset
+    source: Someshfengde/AIMO_dataset
+    template: AlpacaInstructTemplate
+    train_on_input: true
+    max_seq_len: 512
+seed:
+  desc: null
+  value: null
+shuffle:
+  desc: null
+  value: true
+batch_size:
+  desc: null
+  value: 2
+optimizer:
+  desc: null
+  value:
+    _component_: torch.optim.AdamW
+    weight_decay: 0.01
+    lr: 0.0003
+lr_scheduler:
+  desc: null
+  value:
+    _component_: torchtune.modules.get_cosine_schedule_with_warmup
+    num_warmup_steps: 100
+loss:
+  desc: null
+  value:
+    _component_: torch.nn.CrossEntropyLoss
+epochs:
+  desc: null
+  value: 1
+max_steps_per_epoch:
+  desc: null
+  value: null
+gradient_accumulation_steps:
+  desc: null
+  value: 64
+compile:
+  desc: null
+  value: false
+output_dir:
+  desc: null
+  value: lora_finetune_output
+metric_logger:
+  desc: null
+  value:
+    _component_: torchtune.utils.metric_logging.WandBLogger
+    project: torchtune_llama3
+log_every_n_steps:
+  desc: null
+  value: null
+device:
+  desc: null
+  value: cuda
+dtype:
+  desc: null
+  value: fp32
+enable_activation_checkpointing:
+  desc: null
+  value: true
+profiler:
+  desc: null
+  value:
+    _component_: torchtune.utils.profiler
+    enabled: false
